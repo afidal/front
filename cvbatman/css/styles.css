@@ -9,6 +9,7 @@ header {
 
 footer {
   background-color: #005677;
+  text-align: center;
 }
 
 footer p {
@@ -48,10 +49,11 @@ ul {
 
 dl {
     font-size: 15px;
+    line-height: 23px;
 }
 
-dt {
-    font-weight: bold;
+dd { 
+  padding-left: 34px;
 }
 
 .div-sections {
@@ -68,4 +70,5 @@ dt {
 
 .negrita {
     font-weight: bold;
+    padding-right: 4px;
 }
