@@ -10,12 +10,18 @@ body {
 
 a {
   text-decoration: none;
-  color: #9E5E71;
+  color: white;
 }
 
 
 ul {
   list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  padding:15px 20px;
+  background-color: #D18087;
 }
 
 /* Header */
@@ -87,11 +93,11 @@ p {
 dl {
   font-size: 15px;
   line-height: 23px;
-  padding-left: 37px;
+  margin-left: 37px;
 }
 
 dd { 
-padding-left: 50px;
+margin-left: 90px;
 }
 
 .div-sections {
@@ -100,13 +106,10 @@ margin: 0 auto;
 width: 70%;
 }
 
-.negrita-italic {
-font-weight: bold;
-}
 
-.negrita {
+span {
   font-weight: bold;
-  padding-right: 4px;
+  margin-right: 4px;
 }
 
 
@@ -119,10 +122,10 @@ footer {
   margin-top: 30px;
 }
 
-.fab  {
+.social-icon  {
   color: whitesmoke;
   font-size: 30px;
-  padding: 10px;
+  margin: 10px;
 }
 
 

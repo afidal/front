@@ -9,7 +9,7 @@ header {
 }
 
 header img {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 footer {
@@ -26,23 +26,22 @@ footer p {
   text-align: center;
 }
 
-h1 {
+h1, h2 {
   background-color: #c4c4c4;
   color: #005677;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 35px;
   letter-spacing: 5px;
   padding: 5px;
 }
 
+h1 {
+  font-size: 35px;
+}
+
 h2 {
-    background-color: #C4C4C4;
-    text-transform: uppercase;
-    color: #005677;
-    letter-spacing: 5px;
     font-size: 20px;
-    padding: 5px;
+   
 }
 
 ul {
@@ -55,10 +54,11 @@ ul {
 dl {
     font-size: 15px;
     line-height: 23px;
+    margin-left: 25px;
 }
 
 dd { 
-  padding-left: 34px;
+  margin-left: 71.5px;
 }
 
 .div-container {
@@ -68,17 +68,16 @@ dd {
 }
 
 
-.negrita-italic {
-  font-weight: bold;
+span {
+    font-weight: 700;
+    margin-right:2.5px;
+}
+
+.personal span {
   font-style: italic;
 }
 
-.negrita {
-    font-weight: bold;
-    padding-right: 4px;
-}
-
-.fab {
+.icono-social {
   color: white;
-  padding: 5px;
+  margin: 5px;
 }
