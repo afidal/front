@@ -1,0 +1,105 @@
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+
+/* @font-face {
+    font-family: 'Inter-Bold', sans-serif ;
+    src: url(../fonts/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Regular', sans-serif ;
+    src: url(../fonts/Inter/static/Inter-Regular.ttf);
+} */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+ul { 
+    list-style-type: none;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Header */
+
+nav {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #000;
+}
+/* Main */
+
+h1 {
+    font-weight: 900px;
+    font-size: 48px;
+    color: #FFF;
+    line-height: 58px;
+    padding-top: 300px; /* Corregir mas adelante */
+    }
+
+h2 {
+    font-size: 30px;
+    font-weight: 700px;
+    font-style: normal;
+    line-height: 29.05px;
+    color: #444;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #444;
+    font-size: 18px;
+    line-height: 23.99px;
+}
+
+li {    
+    color: #444;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 19.36px;
+}
+
+.banner {
+    background-color: wheat; /* Es buena practica poner un color por si la imagen tarda en cargar */
+    background-image: url("../img/lemon-pie 1.png"); /* La imagen se repite por defecto hasta completar alto y ancho */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; /* Cover cubre todo el elemento, Contain se ajusta al alto/ancho (lo primero que encuentre */
+    background-position: center; /* Tambien recibe valores de x e y */
+    height: 460px;
+}
+
+.banner p {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 19.36px;
+}
+
+.fas {
+    padding-right: 10px;
+    color: #444;
+}
+
+/* Footer */
+
+footer {
+    background-color: #C4C4C4;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    color: #444;
+    padding:15px;
+}
