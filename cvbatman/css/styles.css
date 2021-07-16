@@ -1,10 +1,15 @@
 body {
-  background-color: E5E5E5;
+  margin: 0px;
   font-family: "Times New Roman", Times, serif;
 }
 
 header {
-    background-color: #E6E6E6;
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+header img {
+  margin-top: 20px;
 }
 
 footer {
@@ -18,11 +23,11 @@ footer p {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h1 {
   background-color: #c4c4c4;
-  text-align: center;
   color: #005677;
   text-transform: uppercase;
   font-weight: 700;
@@ -56,7 +61,7 @@ dd {
   padding-left: 34px;
 }
 
-.div-sections {
+.div-container {
   background-color: white;
   margin: 0 auto;
   width: 70%;
@@ -71,4 +76,9 @@ dd {
 .negrita {
     font-weight: bold;
     padding-right: 4px;
+}
+
+.fab {
+  color: white;
+  padding: 5px;
 }
