@@ -5,52 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrontCat&Dog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
-      <div>
+      <div class="header-div-top">
         <p>Grandes ofertas en comederos</p>
-        <p>Español</p>
-        <p>ARG$</p>
+        <p>Español<i class="fas fa-chevron-down icon-top"></i></p>
+        <p>ARG$<i class="fas fa-chevron-down icon-top"></i></p>
       </div>
-      <div>
+      <div class="header-div-nav">
         <a href="index.html"
           ><img src="img/cat.png" alt="Gato" />
           <h1>Front<span>Cat&Dog</span></h1>
           <img src="img/dog.png" alt="Perro"
         /></a>
         <nav>
-          <ul type="None">
+          <ul>
             <li>
               <a href="#"
-                ><img
-                  src="img/patitachiquitablanca.png"
-                  alt="Link a Categorías"
-                />Categorías</a
+                ><i class="fas fa-paw icon-nav"></i>Categorías</a
               >
             </li>
             <li>
               <a href="#"
-                ><img
-                  src="img/patitachiquitablanca.png"
-                  alt="Link a Pets"
-                />Pets</a
+                ><i class="fas fa-paw icon-nav"></i>Pets</a
               >
             </li>
             <li>
               <a href="#"
-                ><img
-                  src="img/patitachiquitablanca.png"
-                  alt="Link a Nosotros"
-                />Nosotros</a
+                ><i class="fas fa-paw icon-nav"></i>Nosotros</a
               >
             </li>
             <li>
               <a href="#"
-                ><img
-                  src="img/patitachiquitablanca.png"
-                  alt="Link a Contactenos"
-                />Contactenos</a
+                ><i class="fas fa-paw icon-nav"></i>Contactenos</a
               >
             </li>
           </ul>
@@ -59,38 +49,62 @@
     </header>
 
     <main>
-      <section><img src="img/heroe.png" alt="Imagen de Fondo" /></section>
-      <p>Es un placer tenerte aquí!</p>
+      <section class="heroe">
+      <p class="bienvenida">¡Es un placer tenerte aquí! </p>
       <p>Comederos en descuento</p>
       <a href="#">Comederos</a>
-      <section>
-        <img src="img/pawprint1.png" alt="Patita Grande" />
+      </section>
+      <section class="productos">
+        <i class="fas fa-paw icon-nav icon-main"></i>
         <h2>Productos Destacados</h2>
-        <ul type="none">
+        <ul>
           <li><a href="#">Comederos</a></li>
+          <li>-</li>
           <li><a href="#">Accesorios</a></li>
+          <li>-</li>
           <li><a href="#">Comida</a></li>
         </ul>
         <div>
-          <img src="img/churrasquito.png" alt="Juguete Churrasquito" />
+          <img src="img/churrasquito.png" alt="Juguete Churrasquito">
           <p>Juguete Churrasquito</p>
-          <p>$150</p>
+          <p class="precio">$150</p>
         </div>
         <div>
           <img src="img/comedero.png" alt="Comedero para perro" />
           <p>Comedero para Perro</p>
-          <p>$250</p>
+          <p class="precio">$250</p>
         </div>
         <div>
           <img src="img/Huesito.png" alt="Jueguete Huesito" />
           <p>Juguete Huesito</p>
-          <p>$650</p>
+          <p class="precio">$650</p>
         </div>
       </section>
     </main>
 
     <footer>
-      <p align="center">Todos los derechos reservados</p>
+      <div class="footer-top">
+      <h3>
+       <i class="far fa-envelope icon"></i> Suscríbite para más novedades
+      </h3>
+      </div>
+
+      <div class="footer-main">
+      <h3><i class="fas fa-map-marker-alt icon"></i>Localidad</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quaerat?</p>
+
+      <h3><i class="fas fa-phone icon"></i></i>Telefono</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, deserunt.</p>
+
+      <h3><i class="far fa-envelope icon"></i>Correo Electrónico</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptates.</p>
+      
+      </div>
+
+      <div class="footer-bottom">
+        <p>Todos los derechos reservados</p>
+      </div>
+
     </footer>
   </body>
 </html>
