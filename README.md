@@ -7,3 +7,5 @@ Proyecto CV Batman: https://afidal.github.io/front/cvbatman/
 Proyecto CV Personal: https://afidal.github.io/front/cv/
 
 Proyecto Heroes: https://afidal.github.io/front/heroes/
+
+Proyecto Pizza: https://afidal.github.io/front/pizza/
