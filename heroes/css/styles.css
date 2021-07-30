@@ -11,7 +11,7 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-  color: inherit;
+  color: #F3F3F3;
 }
 
 body {
@@ -30,8 +30,8 @@ header {
 }
 
 h1 {
-    font-size: 40px;
-    padding: 30px;
+    font-size: 2.5rem;
+    padding: 2rem;
 }
 
 .info {
@@ -39,25 +39,38 @@ h1 {
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 1rem;
   color: #000000;
   font-weight: 400;
   font-style: normal;
-  padding: 10px;
+  padding: 0.65rem;
 }
 
 .contenedor {
   margin: 0px auto;
-  width:70%;
+  width:80%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .card 
 {
-  width: 300px;
-  display: inline-block;
+  min-width: 19rem;
   background-color: #F3F3F3;
-  margin: 190px 16px;
- 
+  box-shadow:  3px 3px 1.5px rgb(0, 0, 0, 20%);
+  margin: 6.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.quinn {
+  margin-left: 1rem ;
+  margin-right: 1rem;
 }
 
 
@@ -67,8 +80,10 @@ h3 {
     background-image: url(../img/bg_batman.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 8px 8px 0px 0px;
-    height: 193px;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    height: 12rem;
+    width: 100%;
+    padding: 1rem;
 }
 
 .card-img-quinn {
@@ -76,24 +91,30 @@ h3 {
   background-image: url('../img/bg_quinn.png');
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 8px 8px 0px 0px;
-  height: 193px;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  height: 12rem;
+  width: 100%;
+  padding: 1rem;
 }
 
 .card-text {
   color: #333333;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 15px;
-  position: relative;
+  font-size: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
   color: black;
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
-  margin:70px 20px 30px;
+  padding: 1rem;
+  margin-top: 2.7rem;
+  
 }
 
 .card-button {
@@ -102,26 +123,22 @@ h2 {
   text-align: center;
   font-size: 15px;
   display: inline-block;
-  padding:15px;
-  margin-top: 30px;
-  position: relative;
-  left: 90px;
+  padding: 0.9rem 2.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+
 }
 
 .icon-heart {
-  font-size: 25px;
+  font-size: 1.6rem;
   color: #CC2424;
-  position:relative;
-  left:20px;
-  top:15px;
 }
 
 footer {
   background-color: #00669F;
   color: #FFF9F9;
-  padding:16px;
-  font-size: 16px;
-  line-height: 19px;
+  padding:1rem;
+  font-size: 1rem;
 }
 
 .img-avatar {
@@ -129,8 +146,7 @@ footer {
   border-radius: 50%;
   padding: 1px;
   background-color: black;
-  text-align: center;
+  box-shadow: 2px 1px 3px 1px rgb(0 0 0 / 30%);
   position: absolute;
-  left: 88px;
-  top: -62px;
+  top: 22.5rem;
 }
