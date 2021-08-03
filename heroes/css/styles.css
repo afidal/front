@@ -48,7 +48,7 @@ h3 {
 
 .contenedor {
   margin: 0px auto;
-  width:80%;
+  width:70%;
   display:flex;
   flex-direction: row;
   justify-content: center;
@@ -67,6 +67,7 @@ h3 {
 
 
 }
+
 
 .quinn {
   margin-left: 1rem ;
@@ -105,6 +106,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 h2 {
@@ -148,5 +150,33 @@ footer {
   background-color: black;
   box-shadow: 2px 1px 3px 1px rgb(0 0 0 / 30%);
   position: absolute;
-  top: 22.5rem;
+  top: -3.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 4rem 0rem 1rem 0rem;
+  }
+  
+  footer {
+margin-top: 3rem;
+  }
+
+  .contenedor {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .card {
+    width: 100%;
+    margin: 3rem 0rem 0.75rem 0rem;
+  }
+
+  footer {
+    margin-top: 2.3rem;
+      }
+ 
 }
