@@ -8,10 +8,7 @@
   box-sizing: border-box;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+a {
   text-decoration: none;
   color: #f3f3f3;
 }
@@ -45,6 +42,10 @@ h1 {
   padding: 10px 0px;
 }
 
+.logo a:hover {
+  background-color: #e5e5e5;
+}
+
 header > div {
   background-color: #001d2d;
   display: flex;
@@ -58,10 +59,24 @@ nav ul {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
+  padding: 3px;
 }
 
 nav ul li {
   margin-right: 25px;
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 7px;
+}
+nav ul li a:hover {
+  border: 1px solid white;
+}
+
+nav ul li a:active {
+  border: 1px solid white;
+  background-color: #00669f;
 }
 
 .info {
@@ -140,11 +155,22 @@ h3 {
 
 h2 {
   color: black;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   text-transform: uppercase;
   padding: 1rem;
-  margin-top: 2.7rem;
+}
+
+.card h2 {
+  margin-top: 40px;
+}
+
+.card h2::before {
+  content: "\f0e7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-right: 7px;
 }
 
 .card-button {
@@ -156,6 +182,10 @@ h2 {
   padding: 0.9rem 2.2rem;
   margin-top: 1.5rem;
   margin-bottom: 0.2rem;
+}
+
+.card-button:hover {
+  background-color: #001d2d;
 }
 
 .icon-heart {
@@ -189,17 +219,16 @@ footer {
   width: 70%;
   margin: 0px auto;
   padding: 50px 80px 50px 80px;
-  border: 1px solid #ccc;
 }
 
 .login h2 {
   font-family: "Inter", sans-serif;
   align-self: flex-start;
   color: #333;
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: 700;
-  margin: 0px;
+  margin-left: 50px;
 }
 
 form {
@@ -207,7 +236,74 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25px 0px;
+  margin: 15px 0px;
+  width: 80%;
+  color: #000000;
+}
+
+form > div {
+  width: 100%;
+}
+
+input,
+label,
+select {
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #1cd1b0;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin: 15px 0px;
+  border: none;
+}
+
+.botonera-partida {
+  display: flex;
+  justify-content: space-around;ß
+}
+
+.botonera-partida input {
+  width: 47.5%;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  cursor: pointer;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #1cd1b0;
+  color: black;
+  font-weight: 700;
+  border-radius: 15px;
+}
+
+input[type="reset"] {
+  background-color: #888888;
+  color: black;
+  font-weight: 700;
+  border-radius: 15px;
+}
+
+input[type="text"],
+textarea {
+  border: 1px solid black;
 }
 
 form > div {
@@ -225,6 +321,10 @@ form > div {
   color: #333;
 }
 
+.login p a:hover{
+  color: #1cd1b0;
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
@@ -240,15 +340,16 @@ form > div {
   }
 
   .login {
-    margin: 70px auto;
+    margin: 0px auto;
+    width: 85%;
+  }
+
+  .login h2 {
+    margin-left: 40px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /*  html {
-    font-size: 13px;
-  } */
-
   .card {
     width: 100%;
     margin: 3rem 0rem 0.75rem 0rem;
@@ -281,7 +382,23 @@ form > div {
 
   .login {
     width: 100%;
-    margin: 40px auto 0px auto;
+    margin: 35px auto 0px auto;
     padding: 5px;
+  }
+
+  .login p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .login h2 {
+    font-size: 2rem;
+    align-self: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  form {
+    margin: 0px;
   }
 }
