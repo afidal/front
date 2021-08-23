@@ -15,12 +15,10 @@ body {
   font-style: normal;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 ul {
@@ -82,6 +80,19 @@ h4 {
   margin-right: 7px;
 }
 
+select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  color: white;
+  outline: none;
+}
+
 .header-div-nav {
   background-color: #f0a83e;
   padding: 20px;
@@ -93,10 +104,31 @@ h4 {
   display: flex;
 }
 
-.logo-top {
+a.logo-top {
   display: flex;
   align-items: center;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+}
+
+nav ul li a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1b0";
+  color: white;
+  font-size: 1rem;
+  margin-right: 3px;
+}
+
+nav ul li a {
+  transition: transform 0.25s;
+}
+
+nav ul li a:hover {
+  transform: scale(1.15);
+}
+
+nav ul li a:hover::before {
+  transform: scale(1.1);
 }
 
 .icono-menu {
@@ -110,20 +142,6 @@ nav {
   font-size: 0.8rem;
   line-height: 1rem;
   padding-top: 3px;
-}
-
-/* Estilos de Iconos Header */
-
-.icon-top {
-  color: white;
-  font-size: 0.65rem;
-  margin-left: 4px;
-}
-
-.icon-nav {
-  color: white;
-  font-size: 1rem;
-  margin-right: 3px;
 }
 
 /* Estilos Main */
@@ -157,6 +175,10 @@ main li {
   display: flex;
 }
 
+.saludo {
+  margin-right: 25px;
+}
+
 .heroe a {
   background-color: #f0a83e;
   color: #fff;
@@ -166,6 +188,17 @@ main li {
   padding: 20px;
   padding: 15px 25px;
   border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: transform 0.25s;
+  
+}
+
+.heroe a:hover {
+  background-color: #3c2313;
+}
+
+.heroe a:active {
+transform: scale(1.1);
 }
 
 .heroe p {
@@ -185,7 +218,6 @@ main li {
   justify-content: center;
 }
 
-
 p.bienvenida {
   font-size: 1.875rem;
   color: #3c2313;
@@ -194,6 +226,7 @@ p.bienvenida {
   border-radius: 7px;
   line-height: 2.2rem;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .productos {
@@ -205,6 +238,10 @@ p.bienvenida {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.productos ul li a:hover {
+  color: #3c2313;
 }
 
 .productos > div {
@@ -231,6 +268,73 @@ p.bienvenida {
   font-size: 1.9rem;
 }
 
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32.5%;
+  margin: 35px auto 80px auto;
+}
+
+.contacto h2 {
+  font-size: 1.55rem;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 18px;
+  background-color: #3c2313;
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  background-color: #f0a83e;
+}
+
+input[type="submit"] {
+  background: #f0a83e;
+  color: white;
+  width: 30%;
+  border-radius: 25px;
+  margin-left: 10px;
+  font-size: 0.85rem;
+  padding: 15px 10px;
+}
+
+input[type="reset"] {
+  background: #8a8787;
+  color: white;
+  width: 30%;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-size: 0.85rem;
+  padding: 15px 10px;
+}
+
+input[type="reset"]:hover {
+  background-color: #666666;
+}
+
+input[type="submit"]:hover {
+  background-color: #ef961a;
+}
+
+.botonera {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Estilos de Iconos Main */
 .icon-main {
   color: #f0a83e;
@@ -251,10 +355,47 @@ footer p {
 
 .footer-top {
   background-color: #f0a83e;
+  padding: 0px 60px;
 }
 
 .footer-top h3 {
-  padding: 20px;
+  padding: 20px 0px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top form {
+  display: flex;
+}
+
+.footer-top input[type="email"] {
+  width: 250px;
+  background-color: white;
+}
+
+.footer-top input[type="email"]::placeholder {
+  color: gray;
+}
+
+.footer-top input[type="email"]:focus {
+  border: solid 1px;
+}
+
+.footer-top input[type="submit"] {
+  background-color: #3c2313;
+  width: unset;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.footer-top input[type="submit"]:hover {
+  border: 1px solid #3c2313;
+  background-color: #f0a83e;
+
 }
 
 .footer-main {
@@ -300,18 +441,24 @@ h4 span {
   margin-right: 15px;
 }
 
-@media screen and (max-width:768px) {
-
-
-.productos > div {
-  display: flex;
-  flex-direction: column;
+iframe {
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
-.saludo  {
-  margin-right: 40px;
-}
+@media screen and (max-width: 768px) {
+  .productos > div {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .saludo {
+    margin-right: 40px;
+  }
+
+  .contacto {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -321,7 +468,6 @@ h4 span {
 
   .icono-menu {
     display: inline-block;
-    margin-right: 20px;
   }
 
   nav {
@@ -379,19 +525,43 @@ h4 span {
     background-position: left;
   }
 
-  .saludo  {
+  .saludo {
     margin-right: 0;
   }
 
   .productos h2 {
-    
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: 3rem;
-      text-align: center;
-      padding: 0px 10px;
-    }
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: center;
+    padding: 0px 10px;
   }
-  
-  
 
+  .contacto {
+    width: 85%;
+    margin-bottom: 45px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 15px 10px;
+  }
+
+  .footer-top form {
+    width: 90%;
+  }
+
+  .footer-top input[type="submit"] {
+    width: 32%;
+    padding: 0px 10px;
+  }
+
+  .contacto input[type="submit"] {
+    width: 50%;
+  }
+
+  .contacto input[type="reset"] {
+    width: 50%;
+  }
+}

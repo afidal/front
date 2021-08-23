@@ -13,8 +13,15 @@
       <div class="header-div-top">
         <p class="ofertas-right">Grandes ofertas en comederos</p>
         <div class="settings">
-        <p>Español<i class="fas fa-chevron-down icon-top"></i></p>
-        <p>ARG$<i class="fas fa-chevron-down icon-top"></i></p>
+        <select>
+          <option value="Español">Español</option>
+          <option value="English">Inglés</option>
+        </select>
+        <select> 
+          <option value="ARS">ARS</option>
+          <option value="USD">USD</option>
+          <option value="MXN">MXN</option>
+        </select>
       </div>
       </div>
       <div class="header-div-nav">
@@ -31,22 +38,22 @@
           <ul>
             <li>
               <a href="#"
-                ><i class="fas fa-paw icon-nav"></i>Categorías</a
+                ></i>Categorías</a
               >
             </li>
             <li>
               <a href="#"
-                ><i class="fas fa-paw icon-nav"></i>Pets</a
+                ></i>Pets</a
               >
             </li>
             <li>
               <a href="#"
-                ><i class="fas fa-paw icon-nav"></i>Nosotros</a
+                ></i>Nosotros</a
               >
             </li>
             <li>
               <a href="#"
-                ><i class="fas fa-paw icon-nav"></i>Contactenos</a
+                ></i>Contactenos</a
               >
             </li>
           </ul>
@@ -94,6 +101,21 @@
         </div>
       </div>
       </section>
+      <section class="contacto">
+        <h2>Contactános</h2>
+        <form action="" method="POST"> 
+          <label for="nombre"></label>
+          <input type="text" placeholder="Nombre y Apellido" name="nombre">
+          <label for="email"></label>
+          <input type="email" placeholder="Ingresá con Correo Electrónico" name="email">
+          <label for="tel"></label>
+          <input type="tel" placeholder="Teléfono" name="tel">
+          <div class="botonera">
+            <input type="reset" value="Resetear">
+          <input type="submit" value="Enviar">
+         </div>
+      </form>
+      </section>
     </main>
 
     <footer>
@@ -101,22 +123,30 @@
       <h3>
        <i class="far fa-envelope icon"></i> Suscríbite para más novedades
       </h3>
+      <form>
+        <label for="email"></label>
+        <input type="email" placeholder="Ingresá tu Correo Electrónico" >
+        <input type="submit" value="Suscribirme">
+      </form>
       </div>
 
       <div class="footer-main">
       
       <div class="datoscontacto">
 
-      <div><h3><i class="fas fa-map-marker-alt icon"></i>Localidad</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quaerat?</p>
+      <div>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quaerat?</p> -->
+      <div><h3><i class="fas fa-phone icon"></i></i>Telefono</h3>
+        <p><a href="tel:+54111234567">+54(11)1234567</a></p>
+       </div>
+        
+        <div><h3><i class="far fa-envelope icon"></i>Correo Electrónico</h3>
+          <p><a href="mailto:mail@mail.com">mail@mail.com</a></p>
+          <h3><i class="fas fa-map-marker-alt icon"></i>Localidad</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26286.323590982676!2d-58.47130504162198!3d-34.55886071435077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb8e90c7d4ef54fb!2sPuppis%20Veterinaria%2C%20Peluqueria%20y%20Pet%20Shop!5e0!3m2!1sen!2sar!4v1629752871100!5m2!1sen!2sar" width="250" height="155" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       
-      <div><h3><i class="fas fa-phone icon"></i></i>Telefono</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, deserunt.</p>
-     </div>
-      
-      <div><h3><i class="far fa-envelope icon"></i>Correo Electrónico</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptates.</p>
+    
       </div>
 
       </div>
